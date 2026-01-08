@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>中和滴定シミュレーション</title>
+  <link rel="stylesheet" href="rika4-simu-style.css">
+</head>
+<body>
+
+<h2>中和滴定シミュレーション</h2>
+
+<h3>酸の条件</h3>
+
+<label>酸の種類：</label>
+<select id="acidType">
+  <option value="HCl">HCl</option>
+  <option value="H2SO4">H₂SO₄</option>
+</select>
+
+<br>
+
+<label>濃度 (mol/L)：</label>
+<input type="number" id="acidConc" step="0.01">
+
+<br>
+
+<label>体積 (mL)：</label>
+<input type="number" id="acidVol">
+
+<br><br>
+
+<button onclick="calculate()">酸を加える</button>
+
+<h3>結果</h3>
+<p id="result"></p>
+
+<script src="rika4-simu-script.js"></script>
+</body>
+</html>
