@@ -31,10 +31,11 @@ function calculate() {
     const OH = Math.abs(diff) / totalVol;
     const pOH = -Math.log10(OH);
     pH = 14 - pOH;
-    nature = "アルカリ性";
+    nature = "塩基性";
   }
 
   document.getElementById("result").innerHTML =
     `pH：${pH.toFixed(2)}<br>液性：${nature}`;
 
 }
+
