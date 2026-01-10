@@ -19,7 +19,7 @@ function calculate() {
 
   let pH, nature;
 
-  if (Math.abs(diff) < 1e-20) {
+  if (Math.abs(diff) < 1e-6) {
     pH = 7;
     nature = "中性";
     nature = "中性";
@@ -36,4 +36,5 @@ function calculate() {
 
   document.getElementById("result").innerHTML =
     `pH：${pH.toFixed(2)}<br>液性：${nature}`;
+
 }
